@@ -7,6 +7,7 @@ const map = [
   [0, 1, 1, 0],
   [0, 1, 1, 0],
   [1, 1, 1, 1]
+  
 ];
 const ROWS = 4;
 const COLUMNS = 4;
