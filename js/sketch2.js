@@ -6,6 +6,9 @@ import {ErrorPac} from "./classes/errorPac.js";
 import {Powup} from "./classes/powup.js";
 import { Zombie } from "./classes/Zombie.js";
 
+let imgZombie;
+const arrZombies = [];
+
 // El Menu :
 function startGame() {
   document.getElementById("menu").style.display = "none";
