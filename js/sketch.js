@@ -9,8 +9,8 @@ const map = [
   [1, 1, 1, 1]
   
 ];
-const ROWS = 4;
-const COLUMNS = 4;
+const ROWS =4;
+const COLUMNS =4;
 export const IMAGE_SIZE = 32;
 const WIDTH_CANVAS = IMAGE_SIZE * COLUMNS;
 const HEIGHT_CANVAS = IMAGE_SIZE * ROWS;
@@ -23,6 +23,7 @@ console.log("Bgff");
 function preload() {
   console.log("o");
   imgRock = loadImage("../media/roca.png", handleImage, handleError);
+  
 }
 
 function handleError() {

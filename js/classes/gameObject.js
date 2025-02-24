@@ -8,7 +8,7 @@ export class gameObject {
   /**
    * Creates an instance of gameObject.
    *
-   * @author eduardo
+   * @author El bachir
    * @param {number} row The row number of the map.
    * @param {number} column The column number of the ma.
    /*

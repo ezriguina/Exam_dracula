@@ -67,13 +67,14 @@ const arrPowerUp = [];
 
 function preload() {
   imgRock = loadImage("../media/roca.png", handleImage, handleError);
-  imgFood = loadImage("../media/ajo_food.png", handleImage, handleError);
-  imgPacman = loadImage("../media/P_izquierda.png", handleImage, handleError);
-  imgPacmanRight = loadImage("../media/P_derecha.png", handleImage, handleError);
+  imgFood = loadImage("../media/ajo_food_2.png", handleImage, handleError);
+  imgPacman = loadImage("../media/P_arriba.png", handleImage, handleError);
+  imgPacmanRight = loadImage("../media/P_arriba.png", handleImage, handleError);
   imgPacmanUp = loadImage("../media/P_arriba.png", handleImage, handleError);
-  imgPacmanLeft = loadImage("../media/pacLeft.png", handleImage, handleError);
+  imgPacmanLeft = loadImage("../media/P_arriba.png", handleImage, handleError);
   imgPacmanDown = loadImage("../media/P_abajo.png", handleImage, handleError);
-  imgPowerUp = loadImage("../media/holy_water.png", handleImage, handleError);
+  imgPowerUp = loadImage("../media/ajo_food_2.png", handleImage, handleError);
+  //imgZombie = loadImage("../media/zombie.png",handleImage, handleError)
 
   wakaSound = loadSound("../media/audio/WakaWaka.mp3", handleSound, handleErrorSound);
 }
