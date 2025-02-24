@@ -73,6 +73,20 @@ export class Pacman extends gameObject {
     }
   }
 
+  testCollideRock(zombie) {
+    let distancia = dist(this.coordXPixels,
+      this.coordYPixels, zombie.coordXPixels, zombie.coordYPixels);
+    // console.log( "Distancia entre pacman i roca: " + distancia);
+
+    if (distancia < IMAGE_SIZE) {
+      // Has chocado con una roca
+      alert("te ha matado el zombie Zombie, has perdut una vida");
+      this.pacmanlives--;
+      this.spawnPacman();
+    }
+  }
+
+
   testCollideFood(food) {
     let distancia = dist(this.coordXPixels,
       this.coordYPixels, food.coordXPixels, food.coordYPixels);

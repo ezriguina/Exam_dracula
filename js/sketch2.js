@@ -4,7 +4,7 @@ import { Food } from "./classes/food.js";
 import { configGame} from "./constants.js";
 import {ErrorPac} from "./classes/errorPac.js";
 import {Powup} from "./classes/powup.js";
-
+import { Zombie } from "./classes/Zombie.js";
 
 // El Menu :
 function startGame() {
@@ -73,7 +73,7 @@ function preload() {
   imgPacmanUp = loadImage("../media/P_arriba.png", handleImage, handleError);
   imgPacmanLeft = loadImage("../media/P_arriba.png", handleImage, handleError);
   imgPacmanDown = loadImage("../media/P_abajo.png", handleImage, handleError);
-  imgPowerUp = loadImage("../media/ajo_food_2.png", handleImage, handleError);
+  imgPowerUp = loadImage("../media/zombie_3.png", handleImage, handleError);
   //imgZombie = loadImage("../media/zombie.png",handleImage, handleError)
 
   wakaSound = loadSound("../media/audio/WakaWaka.mp3", handleSound, handleErrorSound);
@@ -136,6 +136,8 @@ function setup() {
 startTimeGame = millis();
 } // fi setup
 
+
+
 function draw() {
   background(171, 248, 168);
   // arrRocks.forEach((roca) => roca.showObject(imgRock));
@@ -167,6 +169,7 @@ function draw() {
     }
   }
   //pINTEM ScoreBoard
+   
 
   //comprovar colisions pacman amb po
   for (let i = 0; i < arrPowerUp.length; i++) {
@@ -180,6 +183,11 @@ function draw() {
       } //if enable powerup
     } //if resultTest
   } //for powerup
+//colision con el zombie :
+
+
+
+
  // textFont(font);
   textSize(20);
   textAlign(CENTER, CENTER);
